@@ -556,18 +556,7 @@
 
 
 
-            // Name
-            if (Name.trim() === "") {
-                alert("Name is required");
-            }
-            else if (!/^[A-Za-z ]{3,}$/.test(Name)) {
-                alert("Enter a valid name");
-            }
-
-
-            if (Gender === "") {
-                alert("Please select your gender");
-            }
+           
             let back = document.getElementById("bgs")
             let step1 = document.getElementById("stps1")
             let step2 = document.getElementById("stps2")
@@ -586,14 +575,6 @@
             let back = document.getElementById("bgs")
 
 
-            if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(Email)) {
-                alert("Enter a valid email");
-            }
-
-            // Phone
-            if (!/^[0-9]{10}$/.test(PhoneNumber)) {
-                alert("Phone number must contain 10 digits");
-            }
 
             let step1 = document.getElementById("stps1")
             let step2 = document.getElementById("stps2")
@@ -618,24 +599,7 @@
 
 
             // Password
-            if (Password.length < 8) {
-                alert("Password must be at least 8 characters");
-            }
-            else if (!/[A-Z]/.test(Password)) {
-                alert("Password must contain an uppercase letter");
-            }
-            else if (!/[a-z]/.test(Password)) {
-                alert("Password must contain a lowercase letter");
-            }
-            else if (!/[0-9]/.test(Password)) {
-                alert("Password must contain a number");
-            }
-
-            // Confirm Password
-            if (Password !== ConfirmPassword) {
-                alert("Passwords do not match");
-            }
-
+         
             let step1 = document.getElementById("stps1")
             let step2 = document.getElementById("stps2")
             let step3 = document.getElementById("stps3")
@@ -757,21 +721,7 @@
             console.log(City)
 
 
-            // Address
-            if (Address.trim().length < 10) {
-                alert("Address must be at least 10 characters");
-            }
-
-            // Country
-            if (Country === "") {
-                alert("Please select your country");
-            }
-
-            // City
-            if (!/^[A-Za-z ]{2,}$/.test(City)) {
-                alert("Enter a valid city");
-            }
-
+   
 
             let info = {
                 name: Name,
